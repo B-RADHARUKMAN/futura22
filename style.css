@@ -21,11 +21,7 @@ section,
 .container {
   max-width: 1400px;
 }
-@media (min-width: 767px) {
-  .container {
-    padding: 0 2rem !important;
-  }
-}
+
 
 a.mbr-iconfont:hover {
   text-decoration: none;
@@ -951,10 +947,50 @@ blockquote {
   top: 0;
   left: -2400px;
 }
-#preloader{
-  background-image: #000 url('.')
-  height:100vh;
-  width:100%;
-  position:fixed;
-  z-index:100;
+.loaderimage {
+  width: 80px;
+  margin-top: -130px;
+  
 }
+
+.notLoaded {
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  margin: 0px;
+}
+
+#loader {
+  position: absolute;
+  background: white;
+  width: 50%;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.what{
+  text-align: center;
+  padding: 20px;
+  color: white;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#land{
+  display:flex;
+
+  padding-left:350px;
+  padding-top:150px;
+  
+  width:80%;
+  
+}
+#intro{
+  display:none;
+}
+@media only screen and (max-width: 600px) {
+  
+}
+    
+
